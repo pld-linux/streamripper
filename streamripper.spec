@@ -7,7 +7,6 @@ License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/streamripper/%{name}-%{version}.tar.gz
 # Source0-md5:	8ec533c217cf37f2d0bd893c50ec7c53
-# Source0-size:	698970
 URL:		http://streamripper.sourceforge.net/
 BuildRequires:	libmad-devel >= 0.15.1b
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
