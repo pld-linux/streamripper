@@ -1,0 +1,32 @@
+--- streamripper-1.60.10/configure.ac.orig	2004-06-05 21:18:42.000000000 +0200
++++ streamripper-1.60.10/configure.ac	2004-06-19 00:59:42.576209112 +0200
+@@ -17,7 +17,6 @@
+ dnl Replace `main' with a function in -lm:
+ AC_CHECK_LIB(m, main)
+ 
+-AC_CONFIG_SUBDIRS(libmad-0.15.1b)
+ 
+ 
+ THREADLIBS=no
+--- streamripper-1.60.10/Makefile.am.orig	2004-06-05 21:21:47.000000000 +0200
++++ streamripper-1.60.10/Makefile.am	2004-06-19 01:00:05.843671920 +0200
+@@ -1,7 +1,5 @@
+ ## Process this file with automake to produce Makefile.in
+ 
+-SUBDIRS = libmad-0.15.1b
+-
+ bin_PROGRAMS = streamripper
+ streamripper_SOURCES = \
+ 	console/streamripper.c \
+@@ -117,9 +115,8 @@
+ 
+ DIST_SUBDIRS = 
+ 
+-AM_CPPFLAGS = -Ilib -Ilibmad-0.15.1b -D__UNIX__
++AM_CPPFLAGS = -Ilib -D__UNIX__
+ 
+-streamripper_LDADD = \
+-	libmad-0.15.1b/.libs/libmad.a @THREADLIBS@
++streamripper_LDADD = -lmad @THREADLIBS@
+ 
+ 
