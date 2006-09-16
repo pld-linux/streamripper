@@ -1,12 +1,12 @@
 Summary:	Open Source (GPL) application that lets you record streaming MP3 to your hard drive
 Summary(pl):	Aplikacja o Otwartym Kodzie (GPL) pozwalaj±ca zapisaæ strumieñ MP3 na dysk twardy
 Name:		streamripper
-Version:	1.61.26
+Version:	1.61.27
 Release:	1
 License:	GPL
 Group:		Applications
 Source0:	http://dl.sourceforge.net/streamripper/%{name}-%{version}.tar.gz
-# Source0-md5:	435ae5886a47919732553925436f66df
+# Source0-md5:	d92a37bf23ee3f1bd5a9498d72c0562a
 URL:		http://streamripper.sourceforge.net/
 BuildRequires:	libmad-devel >= 0.15.1b
 BuildRequires:	libogg-devel
