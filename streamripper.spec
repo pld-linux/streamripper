@@ -1,5 +1,5 @@
 Summary:	Open Source (GPL) application that lets you record streaming MP3 to your hard drive
-Summary(pl):	Aplikacja o Otwartym Kodzie (GPL) pozwalaj±ca zapisaæ strumieñ MP3 na dysk twardy
+Summary(pl.UTF-8):   Aplikacja o Otwartym Kodzie (GPL) pozwalajÄ…ca zapisaÄ‡ strumieÅ„ MP3 na dysk twardy
 Name:		streamripper
 Version:	1.61.27
 Release:	1
@@ -17,9 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Streamripper records shoutcast compatible streams. It saves them on
 disk with appropriate names using "meta data".
 
-%description -l pl
+%description -l pl.UTF-8
 Streamripper nagrywa strumienie kompatybilne z shoutcast'em. Zapisuje
-pliki na dysku z odpowiednimi nazwami wykorzystuj±c "meta dane".
+pliki na dysku z odpowiednimi nazwami wykorzystujÄ…c "meta dane".
 
 %prep
 %setup -q
