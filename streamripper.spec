@@ -1,13 +1,12 @@
-%define		_rc	beta-2
 Summary:	Open Source (GPL) application that lets you record streaming MP3 to your hard drive
 Summary(pl.UTF-8):	Aplikacja o Otwartym Kodzie (GPL) pozwalająca zapisać strumień MP3 na dysk twardy
 Name:		streamripper
-Version:	1.62
+Version:	1.62.1
 Release:	0.1
 License:	GPL
 Group:		Applications
-Source0:	http://dl.sourceforge.net/streamripper/%{name}-%{version}-%{_rc}.tar.gz
-# Source0-md5:	595712d6309e0c2e62345b4139004a76
+Source0:	http://dl.sourceforge.net/streamripper/%{name}-%{version}.tar.gz
+# Source0-md5:	c8c84b8acf84f3d431bf7b6303acc63b
 URL:		http://streamripper.sourceforge.net/
 BuildRequires:	libmad-devel >= 0.15.1b
 BuildRequires:	libogg-devel
@@ -20,11 +19,11 @@ Streamripper records shoutcast compatible streams. It saves them on
 disk with appropriate names using "meta data".
 
 %description -l pl.UTF-8
-Streamripper nagrywa strumienie kompatybilne z shoutcast'em. Zapisuje
+Streamripper nagrywa strumienie kompatybilne z shoutcastem. Zapisuje
 pliki na dysku z odpowiednimi nazwami wykorzystując "meta dane".
 
 %prep
-%setup -q -n %{name}-%{version}-%{_rc}
+%setup -q -n %{name}-%{version}
 rm -rf tre-0.7.2 libmad-0.15.1b
 
 %build
