@@ -23,7 +23,7 @@ Streamripper nagrywa strumienie kompatybilne z shoutcastem. Zapisuje
 pliki na dysku z odpowiednimi nazwami wykorzystując "meta dane".
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 rm -rf tre-0.7.2 libmad-0.15.1b
 
 %build
