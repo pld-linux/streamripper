@@ -12,6 +12,7 @@ BuildRequires:	glib2-devel >= 2.16
 BuildRequires:	libmad-devel >= 0.15.1b
 BuildRequires:	libogg-devel
 BuildRequires:	libvorbis-devel
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
