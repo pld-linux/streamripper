@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 	MANDIR=$RPM_BUILD_ROOT%{_mandir}/man1
 
 %clean
-rm -fr $RPM_BUILD_ROOT
+rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
